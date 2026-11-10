@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "Please cite this analysis and attribute the original UCI dataset separately."
+title: "Task 4: Evidence-Based UCI Online Retail Analysis"
+authors:
+  - family-names: "Reddy"
+    given-names: "T. Aparna"
+version: 1.0.0
+date-released: 2026-11-07
+license: MIT
+type: software
+references:
+  - type: data
+    title: "Online Retail"
+    authors:
+      - family-names: "Chen"
+        given-names: "Daqing"
+    year: 2015
+    doi: 10.24432/C5BW33
+    url: "https://archive.ics.uci.edu/dataset/352/online+retail"
+    license: CC-BY-4.0

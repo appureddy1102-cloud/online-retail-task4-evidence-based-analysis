@@ -1,0 +1,154 @@
+{
+  "author": "T. Aparna Reddy",
+  "report_date": "2026-11-07",
+  "raw_shape": [
+    541909,
+    8
+  ],
+  "raw_missing_pct": 24.926694334288598,
+  "duplicate_pct": 0.9721189350979592,
+  "raw_signed_total": 9747747.934,
+  "description_trimmed_rows": 112371,
+  "blank_after_trim": 0,
+  "country_trimmed_rows": 0,
+  "cleaned_all_shape": [
+    536641,
+    16
+  ],
+  "qualified_sales_shape": [
+    524878,
+    16
+  ],
+  "cleaned_payload_duplicate_rows_after_normalization": 0,
+  "country_multi_label_customers": 8,
+  "first_line": {
+    "invoice": "536365",
+    "stock": "85123A",
+    "quantity": 6,
+    "unit_price": 2.55,
+    "value": 15.299999999999999
+  },
+  "first_invoice_total": 139.12,
+  "first_invoice_lines": 7,
+  "first_five_quantity": [
+    6.0,
+    6.0,
+    8.0,
+    6.0,
+    6.0
+  ],
+  "first_five_mean": 6.4,
+  "first_five_sq_dev_sum": 3.1999999999999997,
+  "first_five_sample_variance": 0.7999999999999999,
+  "first_five_sample_sd": 0.8944271909999159,
+  "quantity_q1": 1.0,
+  "quantity_q3": 11.0,
+  "quantity_iqr": 10.0,
+  "quantity_iqr_lower": -14.0,
+  "quantity_iqr_upper": 26.0,
+  "quantity_outlier_count": 27111,
+  "price_outlier_count": 37827,
+  "price_q1": 1.25,
+  "price_q3": 4.13,
+  "price_iqr": 2.88,
+  "first_retained_quantity_outlier": {
+    "InvoiceNo": "536367",
+    "StockCode": "84879",
+    "Quantity": 32,
+    "UnitPrice": 1.69,
+    "LineValue": 54.08
+  },
+  "median_invoice_lower_centre": 303.3,
+  "median_invoice_upper_centre": 303.3,
+  "pearson_five": {
+    "n": 5,
+    "sum_x": 26.0,
+    "sum_y": 527.95,
+    "sum_x2": 214.0,
+    "sum_y2": 102763.25230000001,
+    "sum_xy": 4661.05,
+    "numerator": 9578.55,
+    "dx": 394.0,
+    "dy": 235085.05899999995,
+    "r": 0.9952659485651739
+  },
+  "welch_worked": {
+    "n_uk": 3920,
+    "n_nonuk": 418,
+    "mean_uk": 391.6830838186249,
+    "mean_nonuk": 661.1232281061882,
+    "sd_uk": 1869.9237444296168,
+    "sd_nonuk": 799.8926068157276,
+    "var_uk": 3496614.8099816786,
+    "var_nonuk": 639828.1824384603,
+    "standard_error": 49.2207578735423,
+    "t": -5.474116123522671,
+    "df": 1008.1829680542309,
+    "p_two_sided": 5.549594300098356e-08
+  },
+  "runtime": {
+    "python": "3.13.16",
+    "pandas": "2.2.3",
+    "numpy": "2.3.5",
+    "scipy": "1.17.1",
+    "matplotlib": "3.11.2",
+    "seaborn": "0.13.2"
+  },
+  "raw_description_nontext_count": 1,
+  "raw_description_nontext_source_rows": [
+    420393
+  ],
+  "first_duplicate_source_rows": [
+    496,
+    519
+  ],
+  "first_duplicate_record": {
+    "InvoiceNo": 536409,
+    "StockCode": 21866,
+    "Description": "UNION JACK FLAG LUGGAGE TAG",
+    "Quantity": 1,
+    "InvoiceDate": "2010-12-01 11:45:00",
+    "UnitPrice": 1.25,
+    "CustomerID": 17908.0,
+    "Country": "United Kingdom"
+  },
+  "missing_description_example": {
+    "SourceRow": 624,
+    "InvoiceNo": "536414",
+    "StockCode": "22139",
+    "DescriptionAfter": "UNKNOWN"
+  },
+  "raw_nonpositive_price_lines": 2517,
+  "present_nonproduct_codes": [
+    "AMAZONFEE",
+    "B",
+    "BANK CHARGES",
+    "C2",
+    "CRUK",
+    "D",
+    "DOT",
+    "M",
+    "PADS",
+    "POST",
+    "S",
+    "m"
+  ],
+  "customers_nonpositive_credit_adjusted": 21,
+  "welch_mean_difference_uk_minus_nonuk": -269.4401442875633,
+  "welch_mean_difference_ci95": [
+    -366.027011072699,
+    -172.85327750242766
+  ],
+  "chi_squared_uncorrected": 0.008718230053279468,
+  "chi_squared_yates": 0.001538287427358927,
+  "chi_squared_expected_min": 143.86214845550944,
+  "cramers_v_uncorrected": 0.001417651195872248,
+  "cramers_v_yates_convention": 0.0005954893124907198,
+  "gross_unrounded": 10642110.804000001,
+  "gross_nonproduct_share_pct": 3.7042056529972576,
+  "duplicated_sales_share_pct": 0.23037842647214918,
+  "raw_quantity_negative_lines": 10624,
+  "raw_zero_quantity_lines": 0,
+  "invoice_timestamp_allocation": "earliest timestamp per invoice",
+  "customer_country_assignment": "earliest qualified invoice timestamp; invoice number breaks ties"
+}

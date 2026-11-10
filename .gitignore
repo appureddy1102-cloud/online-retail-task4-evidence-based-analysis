@@ -1,0 +1,15 @@
+.cache/
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.env
+.env.*
+*credentials*
+*token*
+.DS_Store
+*.zip
+
+# Local visual-review and generated packaging snapshots
+review/
+PACKAGE_MANIFEST.json

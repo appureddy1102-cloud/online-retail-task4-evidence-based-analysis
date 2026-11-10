@@ -1,0 +1,5 @@
+Partition,Lines,DistinctInvoicesInPartition,SignedValue
+Positive-price non-credit sales,524878,19960,10642110.80400000
+C-prefixed credit notes,9251,3836,-893979.73000000
+Other negative-quantity movements,1336,1336,0.00000000
+Remaining excluded lines,1176,821,-22124.12000000

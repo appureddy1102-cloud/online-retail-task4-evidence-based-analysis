@@ -1,0 +1,514 @@
+{
+  "report_date": "2026-11-07",
+  "layout_checked_at_utc": "2026-11-10T07:48:37.119188+00:00",
+  "application": "LibreOffice Writer 25.2.3.2",
+  "direct_microsoft_word_application_tested": false,
+  "pages": 73,
+  "figures": 15,
+  "tables": 31,
+  "word_bytes": 1388194,
+  "word_sha256": "30c0823a72edb604492ac4d19278f0b8d0a0a502cf43cfc35bb178c828f645d8",
+  "checks": {
+    "pdf_pages_equal_writer_pagination": true,
+    "all_pages_nonempty": true,
+    "all_fifteen_captions_present_once": true,
+    "caption_and_chart_share_page": true,
+    "no_text_spans_beyond_generous_page_boundaries": true,
+    "no_replacement_characters": true,
+    "word_has_fifteen_inline_figures": true,
+    "word_has_thirty_one_tables": true,
+    "author_attribution_preserved": true,
+    "title_attribution_preserved": true
+  },
+  "passed": 10,
+  "total": 10,
+  "figure_caption_pages": {
+    "1": 3,
+    "2": 30,
+    "3": 31,
+    "4": 32,
+    "5": 33,
+    "6": 34,
+    "7": 35,
+    "8": 36,
+    "9": 37,
+    "10": 38,
+    "11": 39,
+    "12": 40,
+    "13": 41,
+    "14": 42,
+    "15": 43
+  },
+  "outside_spans": [],
+  "page_summary": [
+    {
+      "page": 1,
+      "text_characters": 1314,
+      "image_count": 15,
+      "figure_captions": []
+    },
+    {
+      "page": 2,
+      "text_characters": 3420,
+      "image_count": 15,
+      "figure_captions": []
+    },
+    {
+      "page": 3,
+      "text_characters": 1900,
+      "image_count": 15,
+      "figure_captions": [
+        "1"
+      ]
+    },
+    {
+      "page": 4,
+      "text_characters": 2841,
+      "image_count": 15,
+      "figure_captions": []
+    },
+    {
+      "page": 5,
+      "text_characters": 2086,
+      "image_count": 15,
+      "figure_captions": []
+    },
+    {
+      "page": 6,
+      "text_characters": 3071,
+      "image_count": 15,
+      "figure_captions": []
+    },
+    {
+      "page": 7,
+      "text_characters": 2909,
+      "image_count": 15,
+      "figure_captions": []
+    },
+    {
+      "page": 8,
+      "text_characters": 3084,
+      "image_count": 15,
+      "figure_captions": []
+    },
+    {
+      "page": 9,
+      "text_characters": 1943,
+      "image_count": 15,
+      "figure_captions": []
+    },
+    {
+      "page": 10,
+      "text_characters": 2107,
+      "image_count": 15,
+      "figure_captions": []
+    },
+    {
+      "page": 11,
+      "text_characters": 2730,
+      "image_count": 15,
+      "figure_captions": []
+    },
+    {
+      "page": 12,
+      "text_characters": 1914,
+      "image_count": 15,
+      "figure_captions": []
+    },
+    {
+      "page": 13,
+      "text_characters": 2879,
+      "image_count": 15,
+      "figure_captions": []
+    },
+    {
+      "page": 14,
+      "text_characters": 3275,
+      "image_count": 15,
+      "figure_captions": []
+    },
+    {
+      "page": 15,
+      "text_characters": 2908,
+      "image_count": 15,
+      "figure_captions": []
+    },
+    {
+      "page": 16,
+      "text_characters": 2997,
+      "image_count": 15,
+      "figure_captions": []
+    },
+    {
+      "page": 17,
+      "text_characters": 2231,
+      "image_count": 15,
+      "figure_captions": []
+    },
+    {
+      "page": 18,
+      "text_characters": 2205,
+      "image_count": 15,
+      "figure_captions": []
+    },
+    {
+      "page": 19,
+      "text_characters": 2200,
+      "image_count": 15,
+      "figure_captions": []
+    },
+    {
+      "page": 20,
+      "text_characters": 2484,
+      "image_count": 15,
+      "figure_captions": []
+    },
+    {
+      "page": 21,
+      "text_characters": 1869,
+      "image_count": 15,
+      "figure_captions": []
+    },
+    {
+      "page": 22,
+      "text_characters": 1791,
+      "image_count": 15,
+      "figure_captions": []
+    },
+    {
+      "page": 23,
+      "text_characters": 1742,
+      "image_count": 15,
+      "figure_captions": []
+    },
+    {
+      "page": 24,
+      "text_characters": 1543,
+      "image_count": 15,
+      "figure_captions": []
+    },
+    {
+      "page": 25,
+      "text_characters": 2081,
+      "image_count": 15,
+      "figure_captions": []
+    },
+    {
+      "page": 26,
+      "text_characters": 1708,
+      "image_count": 15,
+      "figure_captions": []
+    },
+    {
+      "page": 27,
+      "text_characters": 2243,
+      "image_count": 15,
+      "figure_captions": []
+    },
+    {
+      "page": 28,
+      "text_characters": 2369,
+      "image_count": 15,
+      "figure_captions": []
+    },
+    {
+      "page": 29,
+      "text_characters": 2238,
+      "image_count": 15,
+      "figure_captions": []
+    },
+    {
+      "page": 30,
+      "text_characters": 1425,
+      "image_count": 15,
+      "figure_captions": [
+        "2"
+      ]
+    },
+    {
+      "page": 31,
+      "text_characters": 890,
+      "image_count": 15,
+      "figure_captions": [
+        "3"
+      ]
+    },
+    {
+      "page": 32,
+      "text_characters": 1058,
+      "image_count": 15,
+      "figure_captions": [
+        "4"
+      ]
+    },
+    {
+      "page": 33,
+      "text_characters": 935,
+      "image_count": 15,
+      "figure_captions": [
+        "5"
+      ]
+    },
+    {
+      "page": 34,
+      "text_characters": 933,
+      "image_count": 15,
+      "figure_captions": [
+        "6"
+      ]
+    },
+    {
+      "page": 35,
+      "text_characters": 924,
+      "image_count": 15,
+      "figure_captions": [
+        "7"
+      ]
+    },
+    {
+      "page": 36,
+      "text_characters": 853,
+      "image_count": 15,
+      "figure_captions": [
+        "8"
+      ]
+    },
+    {
+      "page": 37,
+      "text_characters": 960,
+      "image_count": 15,
+      "figure_captions": [
+        "9"
+      ]
+    },
+    {
+      "page": 38,
+      "text_characters": 924,
+      "image_count": 15,
+      "figure_captions": [
+        "10"
+      ]
+    },
+    {
+      "page": 39,
+      "text_characters": 958,
+      "image_count": 15,
+      "figure_captions": [
+        "11"
+      ]
+    },
+    {
+      "page": 40,
+      "text_characters": 979,
+      "image_count": 15,
+      "figure_captions": [
+        "12"
+      ]
+    },
+    {
+      "page": 41,
+      "text_characters": 1033,
+      "image_count": 15,
+      "figure_captions": [
+        "13"
+      ]
+    },
+    {
+      "page": 42,
+      "text_characters": 935,
+      "image_count": 15,
+      "figure_captions": [
+        "14"
+      ]
+    },
+    {
+      "page": 43,
+      "text_characters": 1060,
+      "image_count": 15,
+      "figure_captions": [
+        "15"
+      ]
+    },
+    {
+      "page": 44,
+      "text_characters": 2439,
+      "image_count": 15,
+      "figure_captions": []
+    },
+    {
+      "page": 45,
+      "text_characters": 2223,
+      "image_count": 15,
+      "figure_captions": []
+    },
+    {
+      "page": 46,
+      "text_characters": 2282,
+      "image_count": 15,
+      "figure_captions": []
+    },
+    {
+      "page": 47,
+      "text_characters": 2292,
+      "image_count": 15,
+      "figure_captions": []
+    },
+    {
+      "page": 48,
+      "text_characters": 2430,
+      "image_count": 15,
+      "figure_captions": []
+    },
+    {
+      "page": 49,
+      "text_characters": 2114,
+      "image_count": 15,
+      "figure_captions": []
+    },
+    {
+      "page": 50,
+      "text_characters": 2207,
+      "image_count": 15,
+      "figure_captions": []
+    },
+    {
+      "page": 51,
+      "text_characters": 2624,
+      "image_count": 15,
+      "figure_captions": []
+    },
+    {
+      "page": 52,
+      "text_characters": 2997,
+      "image_count": 15,
+      "figure_captions": []
+    },
+    {
+      "page": 53,
+      "text_characters": 2397,
+      "image_count": 15,
+      "figure_captions": []
+    },
+    {
+      "page": 54,
+      "text_characters": 2474,
+      "image_count": 15,
+      "figure_captions": []
+    },
+    {
+      "page": 55,
+      "text_characters": 2066,
+      "image_count": 15,
+      "figure_captions": []
+    },
+    {
+      "page": 56,
+      "text_characters": 2725,
+      "image_count": 15,
+      "figure_captions": []
+    },
+    {
+      "page": 57,
+      "text_characters": 1722,
+      "image_count": 15,
+      "figure_captions": []
+    },
+    {
+      "page": 58,
+      "text_characters": 2961,
+      "image_count": 15,
+      "figure_captions": []
+    },
+    {
+      "page": 59,
+      "text_characters": 4259,
+      "image_count": 15,
+      "figure_captions": []
+    },
+    {
+      "page": 60,
+      "text_characters": 4823,
+      "image_count": 15,
+      "figure_captions": []
+    },
+    {
+      "page": 61,
+      "text_characters": 4587,
+      "image_count": 15,
+      "figure_captions": []
+    },
+    {
+      "page": 62,
+      "text_characters": 4655,
+      "image_count": 15,
+      "figure_captions": []
+    },
+    {
+      "page": 63,
+      "text_characters": 4443,
+      "image_count": 15,
+      "figure_captions": []
+    },
+    {
+      "page": 64,
+      "text_characters": 3168,
+      "image_count": 15,
+      "figure_captions": []
+    },
+    {
+      "page": 65,
+      "text_characters": 3946,
+      "image_count": 15,
+      "figure_captions": []
+    },
+    {
+      "page": 66,
+      "text_characters": 5308,
+      "image_count": 15,
+      "figure_captions": []
+    },
+    {
+      "page": 67,
+      "text_characters": 5038,
+      "image_count": 15,
+      "figure_captions": []
+    },
+    {
+      "page": 68,
+      "text_characters": 4628,
+      "image_count": 15,
+      "figure_captions": []
+    },
+    {
+      "page": 69,
+      "text_characters": 1150,
+      "image_count": 15,
+      "figure_captions": []
+    },
+    {
+      "page": 70,
+      "text_characters": 3802,
+      "image_count": 15,
+      "figure_captions": []
+    },
+    {
+      "page": 71,
+      "text_characters": 4590,
+      "image_count": 15,
+      "figure_captions": []
+    },
+    {
+      "page": 72,
+      "text_characters": 4766,
+      "image_count": 15,
+      "figure_captions": []
+    },
+    {
+      "page": 73,
+      "text_characters": 4767,
+      "image_count": 15,
+      "figure_captions": []
+    }
+  ],
+  "manual_visual_samples": "Cover, contents, descriptive-statistics tables, worked arithmetic, product chart, heatmap, box plot, recommendations and code pages reviewed."
+}

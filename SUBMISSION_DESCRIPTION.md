@@ -1,0 +1,14 @@
+# Task 4 Submission Description
+
+**Project: Real-World Dataset Analysis — Evidence-Based UCI Online Retail Study**  
+**Author: T. Aparna Reddy**
+
+This revised Task 4 project presents a complete, reproducible analysis of the genuine UCI Online Retail dataset. It directly addresses the reviewer’s concerns about insufficient numerical examples, missing statistical workings, limited interpretation, incomplete sections and unsupported findings. The original workbook contains 541,909 invoice lines and eight variables. Its official-file SHA-256 is verified before analysis, and no synthetic records or substitute datasets are used.
+
+The project profiles every original column, including data type, business role, missing count and percentage, uniqueness and category frequencies. Numeric exploration includes mean, median, mode, sample standard deviation, minimum, maximum, quartiles and unusual observations. Cleaning is documented with literal Python code, before-and-after evidence, reasons and effects. The unchanged source is preserved. A complete 536,641-row cleaned dataset retains credits, anonymous customers and financial adjustments, while a separately named 524,878-line sales view answers positive-sales questions. Legitimate outliers are inspected and retained rather than arbitrarily deleted.
+
+Pandas, NumPy and SciPy support univariate, bivariate, multivariate and statistical analysis. Matplotlib and Seaborn produce fifteen labelled figures, including bar charts, histograms, time trends, scatter, box plot, correlation heatmap and count plot. Fourteen fully worked examples use actual observations and substituted values, covering invoice arithmetic, proportions, sample variance and standard deviation, IQR, monthly growth, credit reconciliation, Pearson correlation, Welch’s test and chi-square.
+
+The analysis establishes £10,642,110.80 in sales before credits and £9,748,131.07 after recorded C-credit notes. It identifies fully offset extreme transactions, customer-value concentration, incomplete customer attribution, account-dependent country demand and an invoice-volume-led November peak. Twelve evidence-backed insights connect those results to eight practical recommendations with proposed owners, expected mechanisms and measurable decision gates.
+
+The professional report follows the required nineteen-part order and includes the full computational Python source. An executed notebook, complete evidence tables, cleaned-data manifests, source attribution, reproduction instructions and technical validation accompany the submission. Statistical associations are not presented as causation, historical segment value is not called recoverable revenue, and no profit, campaign uplift or implementation outcome is invented. The project aims for a strong evaluation while recognising that the official score is determined by the evaluator.

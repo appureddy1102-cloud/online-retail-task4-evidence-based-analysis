@@ -1,0 +1,9 @@
+Column,RawDtype,Role,NonNull,Missing,MissingPct,UniqueNonNull
+InvoiceNo,object,nominal invoice/credit identifier,541909,0,0.0000000000,25900
+StockCode,object,nominal item/service identifier,541909,0,0.0000000000,4070
+Description,object,categorical text label,540455,1454,0.2683107311,4223
+Quantity,int64,numeric signed measure,541909,0,0.0000000000,722
+InvoiceDate,datetime64[ns],"datetime, source timezone unspecified",541909,0,0.0000000000,23260
+UnitPrice,float64,numeric GBP measure,541909,0,0.0000000000,1630
+CustomerID,float64,"nullable nominal identifier, not a monetary/quantity measure",406829,135080,24.9266943343,4372
+Country,object,categorical customer-country label,541909,0,0.0000000000,38

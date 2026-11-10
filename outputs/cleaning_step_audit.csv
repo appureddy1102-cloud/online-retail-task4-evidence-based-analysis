@@ -1,0 +1,12 @@
+Operation,RowsBefore,RowsAfter,AffectedOrFlagged,Code,ReasonAndEffect
+Exact duplicate source rows,541909,536641,5268,raw.drop_duplicates(),Assumption: identical source rows are duplicate entries; keep raw and report sensitivity.
+InvoiceNo / StockCode types,536641,536641,0,astype('string').str.strip(),"Nominal identifiers, no financial values or rows removed."
+CustomerID nullable integer,536641,536641,135037,CustomerID.astype('Int64'),"Lossless integer IDs; missing IDs remain missing, not imputed."
+Missing Description,536641,536641,1454,Description.fillna('UNKNOWN'),Sentinel only; does not claim to recover the product name.
+Description edge whitespace,536641,536641,112371,Description.str.strip(),Formatting only; product aggregation uses StockCode and monetary values unchanged.
+Country edge whitespace,536641,536641,0,Country.str.strip(),Measured count may be zero; no invented country reclassification.
+InvoiceDate validation,536641,536641,0,"pd.to_datetime(..., errors='coerce')",Original datetime is already valid; assert no missing dates.
+C-credit flag / partition,536641,536641,9251,InvoiceNo.str.upper().str.startswith('C'),Retain credits in cleaned-all; separate from qualified positive sales.
+Qualified positive sales filter,536641,524878,11763,(~IsCredit) & (Quantity > 0) & (UnitPrice > 0),"Create a separate view, not deletion from cleaned-all; exclusive partitions reconcile."
+IQR quantity / price flags,524878,524878,27111,Q1 - 1.5*IQR; Q3 + 1.5*IQR,"Flag, inspect and retain all qualified outliers; no winsorization of published data."
+Missing-ID sales retained,524878,524878,132186,HasCustomerID = CustomerID.notna(),Only customer-level analysis excludes missing IDs.

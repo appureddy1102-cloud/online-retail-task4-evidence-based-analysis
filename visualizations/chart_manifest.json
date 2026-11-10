@@ -1,0 +1,92 @@
+[
+  {
+    "file": "01_executive_dashboard.png",
+    "title": "Historical commercial KPI dashboard",
+    "bytes": 78888,
+    "dpi": 330
+  },
+  {
+    "file": "02_value_reconciliation.png",
+    "title": "Sales-to-credit-adjusted value reconciliation",
+    "bytes": 65625,
+    "dpi": 330
+  },
+  {
+    "file": "03_monthly_sales.png",
+    "title": "Monthly sales before credits and credit-adjusted value",
+    "bytes": 86130,
+    "dpi": 330
+  },
+  {
+    "file": "04_monthly_credits.png",
+    "title": "Monthly credit counts, document share and value ratio",
+    "bytes": 92793,
+    "dpi": 330
+  },
+  {
+    "file": "05_customer_pareto.png",
+    "title": "Customer sales concentration on the identified-customer basis",
+    "bytes": 102748,
+    "dpi": 330
+  },
+  {
+    "file": "06_rfm_segment_value.png",
+    "title": "RFM customer counts and identified-sales contribution",
+    "bytes": 101843,
+    "dpi": 330
+  },
+  {
+    "file": "07_product_gross_vs_credits.png",
+    "title": "Top merchandise products: gross sales versus credit-adjusted value",
+    "bytes": 124066,
+    "dpi": 330
+  },
+  {
+    "file": "08_nonuk_markets.png",
+    "title": "Top ten non-UK country sales",
+    "bytes": 79263,
+    "dpi": 330
+  },
+  {
+    "file": "09_invoice_value_histogram.png",
+    "title": "Invoice-value histogram with mean and median",
+    "bytes": 52227,
+    "dpi": 330
+  },
+  {
+    "file": "10_basket_value_scatter.png",
+    "title": "Invoice value versus sales-line count scatter plot",
+    "bytes": 288747,
+    "dpi": 330
+  },
+  {
+    "file": "11_invoice_correlation_heatmap.png",
+    "title": "Spearman invoice-level correlation heatmap",
+    "bytes": 82459,
+    "dpi": 330
+  },
+  {
+    "file": "12_trading_rhythm.png",
+    "title": "Weekday revenue and mutually exclusive hourly invoice counts",
+    "bytes": 96096,
+    "dpi": 330
+  },
+  {
+    "file": "13_country_invoice_boxplot.png",
+    "title": "UK and non-UK invoice-value box plots",
+    "bytes": 47087,
+    "dpi": 330
+  },
+  {
+    "file": "14_customer_frequency_count.png",
+    "title": "Observed purchase-frequency count plot",
+    "bytes": 52366,
+    "dpi": 330
+  },
+  {
+    "file": "15_line_quantity_price_histograms.png",
+    "title": "Qualified line quantity and unit-amount histograms",
+    "bytes": 70298,
+    "dpi": 330
+  }
+]

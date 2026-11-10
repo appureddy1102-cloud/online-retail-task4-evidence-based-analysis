@@ -1,0 +1,735 @@
+{
+  "author": "T. Aparna Reddy",
+  "date": "2026-11-07",
+  "sections": [
+    "1. Cover Page",
+    "2. Abstract / Executive Summary",
+    "3. Introduction",
+    "4. Dataset Source and Description",
+    "5. Business Problem and Objectives",
+    "6. Tools and Technologies",
+    "7. Methodology",
+    "8. Dataset Exploration",
+    "9. Data Cleaning and Preprocessing",
+    "10. Exploratory Data Analysis",
+    "11. Statistical Analysis and Worked Examples",
+    "12. Data Visualizations and Interpretations",
+    "13. Key Findings and Original Insights",
+    "14. Business Recommendations",
+    "15. Limitations",
+    "16. Future Scope",
+    "17. Conclusion",
+    "18. References",
+    "19. Appendix – Python Code"
+  ],
+  "tables": [
+    {
+      "number": 1,
+      "title": "Submission profile",
+      "rows": 7,
+      "columns": 2
+    },
+    {
+      "number": 2,
+      "title": "How this revision addresses the reviewer feedback",
+      "rows": 5,
+      "columns": 3
+    },
+    {
+      "number": 3,
+      "title": "Source verification",
+      "rows": 9,
+      "columns": 2
+    },
+    {
+      "number": 4,
+      "title": "All original columns, units and analytical roles",
+      "rows": 8,
+      "columns": 3
+    },
+    {
+      "number": 5,
+      "title": "Analytical questions, methods and business outputs",
+      "rows": 8,
+      "columns": 3
+    },
+    {
+      "number": 6,
+      "title": "Executed analysis environment",
+      "rows": 9,
+      "columns": 2
+    },
+    {
+      "number": 7,
+      "title": "Complete raw schema and null/unique profile",
+      "rows": 8,
+      "columns": 5
+    },
+    {
+      "number": 8,
+      "title": "Five actual source records (Excel rows 2–6)",
+      "rows": 5,
+      "columns": 6
+    },
+    {
+      "number": 9,
+      "title": "Most frequent raw country labels",
+      "rows": 6,
+      "columns": 3
+    },
+    {
+      "number": 10,
+      "title": "Frequent raw product/service codes and labels",
+      "rows": 4,
+      "columns": 3
+    },
+    {
+      "number": 11,
+      "title": "Raw numerical summary; signed values retained",
+      "rows": 10,
+      "columns": 4
+    },
+    {
+      "number": 12,
+      "title": "Valid-view summary at explicitly different grains",
+      "rows": 10,
+      "columns": 5
+    },
+    {
+      "number": 13,
+      "title": "Anomaly register: evidence and treatment",
+      "rows": 6,
+      "columns": 3
+    },
+    {
+      "number": 14,
+      "title": "Mutually exclusive cleaned line partition",
+      "rows": 4,
+      "columns": 3
+    },
+    {
+      "number": 15,
+      "title": "Distributed datasets and retained scope",
+      "rows": 3,
+      "columns": 3
+    },
+    {
+      "number": 16,
+      "title": "Observed sales-invoice frequency per identified purchaser",
+      "rows": 5,
+      "columns": 3
+    },
+    {
+      "number": 17,
+      "title": "Leading countries: value, breadth and account concentration",
+      "rows": 6,
+      "columns": 6
+    },
+    {
+      "number": 18,
+      "title": "Gross merchandise leaders checked against credits",
+      "rows": 6,
+      "columns": 4
+    },
+    {
+      "number": 19,
+      "title": "Exact equal-and-opposite extreme records",
+      "rows": 2,
+      "columns": 4
+    },
+    {
+      "number": 20,
+      "title": "All observed months; source precision retained in computation",
+      "rows": 13,
+      "columns": 6
+    },
+    {
+      "number": 21,
+      "title": "RFM segment distribution",
+      "rows": 9,
+      "columns": 6
+    },
+    {
+      "number": 22,
+      "title": "Country group × RFM × customer AOV: an explicit three-way view",
+      "rows": 4,
+      "columns": 5
+    },
+    {
+      "number": 23,
+      "title": "All seven qualified lines of invoice 536365",
+      "rows": 7,
+      "columns": 5
+    },
+    {
+      "number": 24,
+      "title": "Actual quantities in Excel rows 2–6",
+      "rows": 5,
+      "columns": 3
+    },
+    {
+      "number": 25,
+      "title": "First five invoice summaries in sorted invoice order",
+      "rows": 5,
+      "columns": 6
+    },
+    {
+      "number": 26,
+      "title": "Actual customer-level inputs to Welch’s calculation",
+      "rows": 4,
+      "columns": 3
+    },
+    {
+      "number": 27,
+      "title": "Actual 2×2 customer table",
+      "rows": 3,
+      "columns": 4
+    },
+    {
+      "number": 28,
+      "title": "Customer-level and invoice-level comparisons",
+      "rows": 6,
+      "columns": 3
+    },
+    {
+      "number": 29,
+      "title": "Limitations, consequences and mitigations",
+      "rows": 12,
+      "columns": 3
+    },
+    {
+      "number": 30,
+      "title": "Specific extensions and evidence needed",
+      "rows": 7,
+      "columns": 3
+    },
+    {
+      "number": 31,
+      "title": "Evidence outputs and their purpose",
+      "rows": 7,
+      "columns": 2
+    }
+  ],
+  "figures": [
+    {
+      "number": 1,
+      "file": "01_executive_dashboard.png",
+      "title": "Historical commercial KPI dashboard",
+      "interpretation": "These KPIs use explicit transaction populations. Sales before credits are not accounting net revenue, and the 65.58% repeat share is a within-window description of identified purchasers rather than a cohort-retention estimate.",
+      "observation": "£10,642,110.80 sales before credits; £893,979.73 credits; £9,748,131.07 credit-adjusted value.",
+      "business_implication": "Agree the financial measurement basis before comparing performance or assigning targets.",
+      "evidence_files": "outputs/metrics.json"
+    },
+    {
+      "number": 2,
+      "file": "02_value_reconciliation.png",
+      "title": "Sales, credits and other adjustments",
+      "interpretation": "Three valid transaction-value bases coexist. The all-line signed amount is £9,726,006.95, not the before-credit sales figure. The bridge explains the numerical difference instead of choosing an ambiguous “net revenue” label.",
+      "observation": "£10,642,110.80 before credits becomes £9,748,131.07 after £893,979.73 in C-credit notes; the remaining financial adjustments total −£22,124.12.",
+      "business_implication": "Use a reconciled finance/BI definition and retain an adjustment register before setting or comparing sales targets.",
+      "evidence_files": "outputs/exclusive_line_partitions.csv; outputs/negative_price_exceptions.csv; outputs/metrics.json"
+    },
+    {
+      "number": 3,
+      "file": "03_monthly_sales.png",
+      "title": "Monthly demand with partial-month warning",
+      "interpretation": "Gross and credit-adjusted series share a clear autumn increase, but the last data point is not a comparable full month. November growth of 30.63% is volume-led because invoice count rises faster than total sales.",
+      "observation": "November 2011 reaches £1,503,866.78 on 2,769 invoices; October is £1,151,263.73 on 2,040 invoices. December 2011 covers only 1–9 December.",
+      "business_implication": "Validate the pattern on fresh multi-year data, then test capacity and availability plans rather than extrapolating a nine-day month.",
+      "evidence_files": "outputs/monthly_performance.csv"
+    },
+    {
+      "number": 4,
+      "file": "04_monthly_credits.png",
+      "title": "Credit frequency and value severity are different",
+      "interpretation": "Counts alone rank exposure differently from value-weighted severity. Monthly credits may relate to sales from earlier periods; credit value divided by same-month sales is a period activity ratio, not a cohort return rate. The large January and December offset pairs and partial-month coverage also matter.",
+      "observation": "November has the most C-credit documents (441) but credit value is 3.17% of its sales. January’s ratio is 19.04%; partial December’s is 32.16%.",
+      "business_implication": "Monitor both credit-document share and credit value/sales, with reason codes and links to original invoices before interpreting a process failure.",
+      "evidence_files": "outputs/monthly_performance.csv; outputs/extreme_transaction_pairs.csv"
+    },
+    {
+      "number": 5,
+      "file": "05_customer_pareto.png",
+      "title": "Customer concentration on the identified-sales basis",
+      "interpretation": "Value is concentrated, but the observed threshold is not an exact 80/20 rule. Anonymous sales (£1,754,901.91) sit outside this customer curve, so concentration cannot be asserted for every real purchaser.",
+      "observation": "1,130 customers (26.05% of 4,338) reach 80% of £8,887,208.89 identified sales. The top 43 IDs contribute 31.84% of that pool.",
+      "business_implication": "Validate current major accounts and credit quality; maintain service coverage without assuming a rank is a lifetime-value estimate.",
+      "evidence_files": "outputs/customer_pareto.csv; outputs/customer_rfm.csv; outputs/metrics.json"
+    },
+    {
+      "number": 6,
+      "file": "06_rfm_segment_value.png",
+      "title": "RFM segment size versus value contribution",
+      "interpretation": "Segment headcount and commercial value differ substantially. The segment shares use identified before-credit sales; Champions’ share of all qualified sales is 53.84%. RFM labels are heuristic and tie-dependent.",
+      "observation": "Champions number 942 (21.72% of identified purchasers) and supply 64.47% of known sales. At Risk plus Can’t Lose Them contains 658 IDs.",
+      "business_implication": "Refresh contact eligibility, credit-adjusted balances and segment rules before retention or win-back tests. Do not call all historic segment value recoverable.",
+      "evidence_files": "outputs/rfm_segments.csv; outputs/customer_rfm.csv"
+    },
+    {
+      "number": 7,
+      "file": "07_product_gross_vs_credits.png",
+      "title": "Product leaders before and after recorded credits",
+      "interpretation": "A gross-only catalogue ranking can overstate recorded credit-adjusted transaction value. Two conspicuous bulk transactions are fully offset, but the records remain valid observations in their respective sales/credit views.",
+      "observation": "23843 falls from £168,469.60 to £0.00; 23166 falls from £81,700.92 to £4,221.28. 22423 has £164,459.49 after recorded credits.",
+      "business_implication": "Use credit-aware SKU measures plus stock, margin and lead-time data before changing replenishment or promotions.",
+      "evidence_files": "outputs/product_performance.csv; outputs/extreme_transaction_pairs.csv"
+    },
+    {
+      "number": 8,
+      "file": "08_nonuk_markets.png",
+      "title": "Leading non-UK countries",
+      "interpretation": "The bar chart isolates export comparisons that would otherwise be compressed by UK dominance. Netherlands’ large value does not imply broad customer depth: its top account is 98.16% of identified country sales.",
+      "observation": "Netherlands leads at £285,446.34, followed by EIRE £283,140.52, Germany £228,678.40 and France £209,625.37. UK sales are £9,001,744.09.",
+      "business_implication": "Separate key-account protection from geographic acquisition. Compare customer breadth and delivered margin before proposing expansion.",
+      "evidence_files": "outputs/country_performance.csv"
+    },
+    {
+      "number": 9,
+      "file": "09_invoice_value_histogram.png",
+      "title": "Invoice-value histogram: mean versus typical order",
+      "interpretation": "The log x-axis preserves all positive invoices and makes the severe right tail visible. Equal-width log bins are counts in multiplicative intervals, not a linear-scale density. Mean and median represent different aspects of this distribution.",
+      "observation": "The complete 19,960-invoice distribution has mean £533.17, median £303.30, 99th percentile £4,821.17 and maximum £168,469.60.",
+      "business_implication": "Report a median, IQR and tail percentiles alongside AOV; do not design standard service or demand assumptions around mean alone.",
+      "evidence_files": "outputs/invoice_summary.csv; outputs/valid_descriptive_statistics.csv"
+    },
+    {
+      "number": 10,
+      "file": "10_basket_value_scatter.png",
+      "title": "Basket breadth versus invoice value",
+      "interpretation": "Wider baskets tend to have larger values, with substantial dispersion and extreme observations on logarithmic axes. Line count is not necessarily distinct SKU count and is not an exogenous driver.",
+      "observation": "Across all qualified invoices, Spearman correlation between sales-line count and invoice value is 0.551606. Each plotted point represents one invoice; no point is sampled away.",
+      "business_implication": "Treat basket-building as a hypothesis for a controlled test; do not translate correlation into a promised cross-sell percentage.",
+      "evidence_files": "outputs/invoice_summary.csv; outputs/invoice_spearman.csv"
+    },
+    {
+      "number": 11,
+      "file": "11_invoice_correlation_heatmap.png",
+      "title": "Annotated Spearman correlation heatmap",
+      "interpretation": "Quantity is more strongly rank-associated with recorded value than unweighted line mean price. These variables mechanically contribute to value and may reflect wholesale mix. Cyclic month/hour integers and customer IDs are excluded from the numerical heatmap.",
+      "observation": "Value correlates 0.838984 with total quantity, 0.551606 with sales-line count and 0.094257 with unweighted mean unit amount.",
+      "business_implication": "Investigate quantity/basket mix and unit economics using proper margin and experimental evidence; the heatmap is not a price-optimisation model.",
+      "evidence_files": "outputs/invoice_spearman.csv; outputs/invoice_summary.csv"
+    },
+    {
+      "number": 12,
+      "file": "12_trading_rhythm.png",
+      "title": "Weekday sales and first-recorded invoice hour",
+      "interpretation": "Mutually exclusive earliest-timestamp allocation fixes double counting from invoices that span two line-recording minutes. The aggregate time profile is a billing-data description, not proof of opening hours, labour load or fulfilment times.",
+      "observation": "Thursday contributes £2,199,292.57; noon starts 3,219 qualified invoices. There are no Saturday records in the workbook.",
+      "business_implication": "Compare fresh operational timestamps, order processing effort and service levels before scheduling staff or systems capacity.",
+      "evidence_files": "outputs/weekday_performance.csv; outputs/hourly_performance.csv; outputs/invoice_timestamp_exceptions.csv"
+    },
+    {
+      "number": 13,
+      "file": "13_country_invoice_boxplot.png",
+      "title": "Box plot of UK and non-UK invoice values",
+      "interpretation": "Both groups have substantial high-value tails. Whiskers use 1.5×IQR on the original data, then the y-axis is displayed logarithmically. Outlier points remain. Invoice comparisons are descriptive because repeat customers contribute multiple observations.",
+      "observation": "UK median invoice value is £299.95 (Q1 £147.06; Q3 £465.315) versus non-UK £424.06 (Q1 £228.84; Q3 £790.54). Group sizes are 18,019 and 1,941 invoices.",
+      "business_implication": "Prefer the customer-level comparison for conditional inference and evaluate delivery/margin constraints before treating larger foreign invoices as attractive acquisition economics.",
+      "evidence_files": "outputs/invoice_country_box_statistics.csv; outputs/invoice_summary.csv"
+    },
+    {
+      "number": 14,
+      "file": "14_customer_frequency_count.png",
+      "title": "Count plot of observed customer purchase frequency",
+      "interpretation": "Each identified purchaser appears exactly once, so the bars sum to 4,338. The observed repeat majority does not remove acquisition-date censoring or missing-customer bias. A count plot is used instead of an unnecessary pie chart.",
+      "observation": "Frequency bands contain 1,493 customers with one invoice; 835 with two; 1,138 with 3–5; 535 with 6–10; and 337 with at least 11.",
+      "business_implication": "Build exposure-adjusted cohorts from current customer data and measure repeat activity over a common follow-up window.",
+      "evidence_files": "outputs/customer_frequency_bands.csv; outputs/customer_rfm.csv"
+    },
+    {
+      "number": 15,
+      "file": "15_line_quantity_price_histograms.png",
+      "title": "Qualified line quantity and unit-amount distributions",
+      "interpretation": "The two positive measures have very different units and long tails. Separate panels and logarithmic x-axes preserve every qualified line without implying quantity and currency are directly comparable. The unit-amount panel includes all qualified codes, including non-product entries.",
+      "observation": "Quantity median is 4, mean 10.616600 and maximum 80,995. Unit amount median is £2.08, mode £1.25 and qualified maximum £13,541.33.",
+      "business_implication": "Use a merchandise-only, credit-aware demand layer for replenishment and retain an exception review for unusually large amounts rather than applying a universal cutoff.",
+      "evidence_files": "outputs/sales_line_measures.csv.gz; outputs/valid_descriptive_statistics.csv"
+    }
+  ],
+  "worked_examples": [
+    {
+      "number": 1,
+      "title": "one recorded line value",
+      "formula": "L = Q × P, where Q is recorded quantity and P is the unit amount in GBP.",
+      "substitution": "Excel row 2: InvoiceNo 536365, StockCode 85123A; L = 6 × £2.55 = £15.30.",
+      "result": "The recorded positive line value is £15.30.",
+      "interpretation": "This is a before-credit transaction amount, not margin or proof of cash collection. The product name is WHITE HANGING HEART T-LIGHT HOLDER.",
+      "evidence": "outputs/worked_invoice_536365.csv; original Excel row 2"
+    },
+    {
+      "number": 2,
+      "title": "complete invoice aggregation",
+      "formula": "sum quantity × price across seven lines",
+      "substitution": [
+        15.3,
+        20.34,
+        22.0,
+        20.34,
+        20.34,
+        15.3,
+        25.5
+      ],
+      "result": 139.12,
+      "interpretation": "One invoice, not seven orders.",
+      "evidence": "outputs/worked_invoice_536365.csv"
+    },
+    {
+      "number": 3,
+      "title": "missingness and duplicate proportions",
+      "formula": "Missing % = missing rows / all source rows × 100; duplicate % = exact duplicate rows / all source rows × 100.",
+      "substitution": "CustomerID missing % = 135,080 / 541,909 × 100 = 24.926694%. Duplicate % = 5,268 / 541,909 × 100 = 0.972119%. Rows after deduplication = 541,909 − 5,268 = 536,641.",
+      "result": "About one quarter of raw lines cannot be assigned to a known customer; fewer than 1% are exact duplicate entries.",
+      "interpretation": "The denominators are raw rows, not customer counts. The two flags may overlap; their percentages should not be added as a total error rate.",
+      "evidence": "outputs/raw_schema_profile.csv; outputs/extended_results.json; outputs/duplicate_examples_with_source_rows.csv"
+    },
+    {
+      "number": 4,
+      "title": "sample mean, variance and standard deviation",
+      "formula": "sum squared deviations / (n−1), then square root",
+      "substitution": [
+        6,
+        6,
+        8,
+        6,
+        6
+      ],
+      "result": 0.8944271909999159,
+      "interpretation": "Arithmetic illustration only, not a random sample.",
+      "evidence": "outputs/worked_standard_deviation.csv"
+    },
+    {
+      "number": 5,
+      "title": "global AOV and the actual median positions",
+      "formula": "AOV = Σ sales invoice values / number of sales invoices. For even n, median = (value at position n/2 + value at position n/2 + 1)/2 in ascending order.",
+      "substitution": "AOV = £10,642,110.804 / 19,960 = £533.171884. Sorted positions 9,980 and 9,981 are both £303.30, so median = (£303.30 + £303.30)/2 = £303.30.",
+      "result": "Reported AOV £533.17; median £303.30. Mean/median − 1 = 0.757902684, or approximately 75.79%.",
+      "interpretation": "The mean is not the typical invoice. Both central tendency and tail quantiles should be reported; the gap is descriptive evidence of right skew, not proof of invalid records.",
+      "evidence": "outputs/invoice_summary.csv; outputs/valid_descriptive_statistics.csv; outputs/extended_results.json"
+    },
+    {
+      "number": 6,
+      "title": "IQR fences and a retained real observation",
+      "formula": "IQR = Q3 − Q1; lower fence = Q1 − 1.5×IQR; upper fence = Q3 + 1.5×IQR.",
+      "substitution": "Qualified Quantity: Q1 = 1, Q3 = 11; IQR = 10. Lower = 1 − 15 = −14; upper = 11 + 15 = 26. Invoice 536367 / StockCode 84879 has Quantity 32, so 32 > 26. Its value is 32 × £1.69 = £54.08.",
+      "result": "27,111 of 524,878 sales lines are flagged: 27,111 / 524,878 × 100 = 5.165200%, reported as 5.17%. All remain in the sales dataset.",
+      "interpretation": "A generic IQR rule identifies unusual quantities, not confirmed errors. Deleting this legitimate-looking line merely for exceeding 26 would erase actual recorded demand.",
+      "evidence": "outputs/extended_results.json; data/qualified_sales.csv.gz; original invoice 536367"
+    },
+    {
+      "number": 7,
+      "title": "UK sales-value share",
+      "formula": "Country sales share = country qualified sales / all qualified sales × 100.",
+      "substitution": "UK share = £9,001,744.094 / £10,642,110.804 × 100 = 84.586078%.",
+      "result": "84.59% of qualified sales value is assigned to the United Kingdom.",
+      "interpretation": "This is value-weighted share after deduplication, not the 91.43% UK share of raw lines and not a national market-share estimate. Domestic demand dominates this retailer’s recorded sales.",
+      "evidence": "outputs/country_performance.csv; outputs/metrics.json; outputs/raw_country_frequencies.csv"
+    },
+    {
+      "number": 8,
+      "title": "November growth decomposed into invoices and AOV",
+      "formula": "Growth % = (current − prior)/prior × 100. Sales ratio = invoice-count ratio × AOV ratio.",
+      "substitution": "(£1,503,866.78 − £1,151,263.73)/£1,151,263.73 × 100 = 30.627478%. Invoice growth = (2,769/2,040 − 1)×100 = 35.735294%. AOV change = (543.108263/564.344966 − 1)×100 = −3.763071%. 1.35735294 × 0.96236929 − 1 = 0.30627478.",
+      "result": "Sales grew 30.63%; more invoices outweighed a 3.76% lower average invoice value.",
+      "interpretation": "The peak is invoice-volume-led, not evidence of a price increase. AOV is a mix of prices, quantities, products and customers; it cannot isolate price behaviour. Both months are fully observed.",
+      "evidence": "outputs/monthly_performance.csv; November and October 2011"
+    },
+    {
+      "number": 9,
+      "title": "credit denominators and the financial bridge",
+      "formula": "Adjusted value = sales before credits − absolute recorded C-credit value. Credit-document share = C-credit IDs / (sales IDs + C-credit IDs).",
+      "substitution": "£10,642,110.80 − £893,979.73 = £9,748,131.07. Adding other signed adjustments: £9,748,131.07 − £22,124.12 = £9,726,006.95. Credit-document share = 3,836/(19,960 + 3,836) × 100 = 16.120356%. Credit-value ratio = £893,979.73/£10,642,110.804 × 100 = 8.400399%.",
+      "result": "Credit-adjusted value £9,748,131.07; all-line signed value £9,726,006.95; document share 16.12%; credit-value ratio 8.40%.",
+      "interpretation": "The 16.12% counts documents while 8.40% measures value. Neither is a linked-order cancellation probability. Using all 25,900 raw IDs instead gives 14.81%; using credits/(sales + absolute credits) gives the legacy 7.75% activity share. Different denominators cannot be used interchangeably.",
+      "evidence": "outputs/exclusive_line_partitions.csv; outputs/metrics.json; outputs/negative_price_exceptions.csv"
+    },
+    {
+      "number": 10,
+      "title": "repeat share and segment-denominator discipline",
+      "formula": "Repeat share = purchasers with >1 qualified invoice / identified purchasers. Segment value share requires a stated sales denominator.",
+      "substitution": "2,845/4,338 × 100 = 65.583218%. Champions customer share = 942/4,338 × 100 = 21.715076%. Champions known-sales share = £5,729,483.37/£8,887,208.89 × 100 = 64.468873%; all-sales share = £5,729,483.37/£10,642,110.804 × 100 = 53.837847%.",
+      "result": "65.58% observed repeat share; Champions contribute 64.47% of identified sales, equivalent to 53.84% of all sales.",
+      "interpretation": "The larger segment-value share is not the segment’s share of all revenue. Missing IDs remain outside RFM, and the repeat statistic is not cohort-adjusted retention.",
+      "evidence": "outputs/customer_rfm.csv; outputs/rfm_segments.csv; outputs/metrics.json"
+    },
+    {
+      "number": 11,
+      "title": "manual Pearson correlation",
+      "formula": "covariance sum formula",
+      "substitution": {
+        "n": 5,
+        "sum_x": 26.0,
+        "sum_y": 527.95,
+        "sum_x2": 214.0,
+        "sum_y2": 102763.25230000001,
+        "sum_xy": 4661.05,
+        "numerator": 9578.55,
+        "dx": 394.0,
+        "dy": 235085.05899999995,
+        "r": 0.9952659485651739
+      },
+      "result": 0.9952659485651739,
+      "interpretation": "Five-invoice arithmetic only; full-data rank association differs.",
+      "evidence": "outputs/worked_pearson_five_invoices.csv"
+    },
+    {
+      "number": 12,
+      "title": "manual customer-level Welch test",
+      "formula": "Welch standard error, t and Satterthwaite degrees of freedom",
+      "substitution": {
+        "n_uk": 3920,
+        "n_nonuk": 418,
+        "mean_uk": 391.6830838186249,
+        "mean_nonuk": 661.1232281061882,
+        "sd_uk": 1869.9237444296168,
+        "sd_nonuk": 799.8926068157276,
+        "var_uk": 3496614.8099816786,
+        "var_nonuk": 639828.1824384603,
+        "standard_error": 49.2207578735423,
+        "t": -5.474116123522671,
+        "df": 1008.1829680542309,
+        "p_two_sided": 5.549594300098356e-08
+      },
+      "result": {
+        "t": -5.474116123522671,
+        "df": 1008.1829680542309,
+        "p": 5.549594300098356e-08
+      },
+      "interpretation": "Conditional exploratory group comparison, not causation.",
+      "evidence": "outputs/customer_rfm.csv; outputs/extended_results.json"
+    },
+    {
+      "number": 13,
+      "title": "chi-square and repeat status",
+      "formula": "expected counts and corrected/uncorrected chi-square",
+      "substitution": [
+        [
+          143,
+          275
+        ],
+        [
+          1350,
+          2570
+        ]
+      ],
+      "result": {
+        "chi2_yates": 0.001538287427358927,
+        "p": 0.9687141849780605
+      },
+      "interpretation": "No detected association, not evidence of equivalence.",
+      "evidence": "outputs/country_repeat_contingency.csv; outputs/country_repeat_expected.csv"
+    },
+    {
+      "number": 14,
+      "title": "outlier and deduplication sensitivity, not a replacement result",
+      "formula": "Sensitivity change % = (alternative total − published sales total)/published sales total × 100.",
+      "substitution": "Capping each qualified line at its actual 99th percentile of £183.60 gives £8,907,983.82. (£8,907,983.82 − £10,642,110.804)/£10,642,110.804 × 100 = −16.294953%, reported as −16.29%. Keeping all exact duplicates instead gives £10,666,684.54, £24,573.74 above the published deduplicated basis.",
+      "result": "A generic cap materially lowers recorded activity; exact-duplicate treatment has a much smaller 0.23% effect relative to the no-dedup basis.",
+      "interpretation": "These are transparent alternative definitions, not verified correction amounts, forecasts or realised business benefits. Retaining valid extreme records and checking credits is more defensible than silently clipping them.",
+      "evidence": "outputs/metrics.json: line_p99_value, winsorised_sales_sensitivity, raw_valid_sales_sensitivity"
+    }
+  ],
+  "findings": [
+    {
+      "number": 1,
+      "title": "Sales activity is not retained or accounting revenue",
+      "evidence": "Sales before credits are £10,642,110.80; C-credit notes are £893,979.73.",
+      "comparison": "The resulting £9,748,131.07 differs again from the £9,726,006.95 all-line signed amount after bad-debt adjustments.",
+      "meaning": "The measurement basis changes the answer, not merely its wording.",
+      "importance": "Ambiguous net-revenue labels would obscure credit exposure and inconsistent targets.",
+      "recommendation": "Publish the three separately defined measures and a signed adjustment bridge.",
+      "files": "outputs/exclusive_line_partitions.csv; outputs/negative_price_exceptions.csv"
+    },
+    {
+      "number": 2,
+      "title": "Two fully offset bulk entries dominate credit severity",
+      "evidence": "The 581483/C581484 and 541431/C541433 pairs total £245,653.20 gross and zero signed pair value.",
+      "comparison": "They alone account for 27.48% of recorded C-credit value; 23843 goes from £168,469.60 to £0.00.",
+      "meaning": "A small number of extreme records can alter product rankings and period credit ratios.",
+      "importance": "Treating these gross values as replenishment demand or loyal-customer value would misallocate attention.",
+      "recommendation": "Prioritise traceable credit linkage and inspect large offsets without deleting authentic records or alleging a cause.",
+      "files": "outputs/extreme_transaction_pairs.csv; outputs/product_performance.csv"
+    },
+    {
+      "number": 3,
+      "title": "AOV is materially above the typical invoice",
+      "evidence": "Mean invoice value is £533.17 versus median £303.30, with p99 £4,821.17.",
+      "comparison": "A hypothetical £183.60 line-value cap lowers total sales by 16.29%, much more than the 0.23% deduplication sensitivity.",
+      "meaning": "The upper tail matters financially but does not justify arbitrary clipping.",
+      "importance": "A mean-only view masks both normal-sized orders and exceptional exposure.",
+      "recommendation": "Use median/IQR/tail percentiles alongside AOV and retain credit-qualified extreme observations.",
+      "files": "outputs/valid_descriptive_statistics.csv; outputs/metrics.json"
+    },
+    {
+      "number": 4,
+      "title": "Identity coverage is a value-attribution limitation, not a reason to erase sales",
+      "evidence": "Anonymous qualified lines total 132,186 (25.18%) and £1,754,901.91.",
+      "comparison": "They supply 16.49% of all sales; known purchasers cover £8,887,208.89 (83.51%).",
+      "meaning": "Line missingness and financial coverage differ; a quarter of lines missing an ID does not mean a quarter of sales value is missing.",
+      "importance": "RFM and repeat findings cannot represent the complete purchaser population, and missingness may be selective.",
+      "recommendation": "Retain anonymous transactions in finance/time views and improve permissioned prospective identity linkage.",
+      "files": "outputs/metrics.json; outputs/raw_schema_profile.csv"
+    },
+    {
+      "number": 5,
+      "title": "Repeat activity does not imply a larger mean order",
+      "evidence": "Repeat purchasers number 2,845 of 4,338 (65.58%).",
+      "comparison": "Mean customer AOV is £421.00 for repeat versus £411.25 for one-time purchasers (Welch p 0.8732), while medians are £302.56 and £255.91 and the rank test differs.",
+      "meaning": "Mean, median and distributional questions produce different evidence; non-significance is not equivalence.",
+      "importance": "Retention economics may depend on frequency and credit-qualified contribution, not automatically higher mean AOV.",
+      "recommendation": "Test retention effects using current cohorts, common follow-up and appropriate contribution metrics.",
+      "files": "outputs/customer_rfm.csv; outputs/metrics.json"
+    },
+    {
+      "number": 6,
+      "title": "Customer concentration is strong but denominator-sensitive",
+      "evidence": "Champions are 942 IDs (21.72%) producing £5,729,483.37.",
+      "comparison": "This is 64.47% of identified sales but only 53.84% of all sales; 1,130 IDs, not exactly 20%, reach 80% of the identified pool.",
+      "meaning": "The retailer has concentrated known-account value, not a universal 80/20 law.",
+      "importance": "Ignoring anonymous sales or credit balances overstates the reach and certainty of a CRM list.",
+      "recommendation": "Refresh key accounts, display both denominators and validate current credit-adjusted eligibility.",
+      "files": "outputs/rfm_segments.csv; outputs/customer_pareto.csv"
+    },
+    {
+      "number": 7,
+      "title": "A high gross customer ranking can disappear after credits",
+      "evidence": "Customer 16446 has £168,472.50 gross sales but £2.90 credit-adjusted; customer 12346 has £77,183.60 gross and £0.00 adjusted.",
+      "comparison": "Twenty-one purchasers have a non-positive penny-rounded adjusted balance in the observation window.",
+      "meaning": "Gross-only RFM can label large reversed transactions as customer value.",
+      "importance": "This risks inappropriate incentives, but the balances do not identify lifetime loss or misconduct.",
+      "recommendation": "Supplement rather than silently overwrite gross RFM with transparent credit-adjusted review flags.",
+      "files": "outputs/customer_rfm.csv; outputs/extreme_transaction_pairs.csv; outputs/extended_results.json"
+    },
+    {
+      "number": 8,
+      "title": "Win-back scope is historical exposure, not recoverable revenue",
+      "evidence": "At Risk plus Can’t Lose Them includes 658 purchasers and £818,896.54 of historical gross value.",
+      "comparison": "Recorded customer credits reduce that to £736,853.23; one member has a non-positive adjusted balance.",
+      "meaning": "A segment total describes what was recorded, not what an outreach campaign can recapture.",
+      "importance": "Presenting it as forecast recovery would invent conversion, permission and uplift assumptions.",
+      "recommendation": "Validate fresh permissions, exclude unresolved credit issues and measure a holdout-based campaign before scaling.",
+      "files": "outputs/customer_rfm.csv; outputs/rfm_segments.csv; outputs/metrics.json"
+    },
+    {
+      "number": 9,
+      "title": "Country value can represent one account rather than market breadth",
+      "evidence": "The UK generates £9,001,744.09 (84.59% of sales); Netherlands leads non-UK at £285,446.34.",
+      "comparison": "The leading Netherlands account supplies 98.16% of identified country sales across nine known IDs, while Germany has 94 and France 87 known purchasers.",
+      "meaning": "High national sales and broad demand are different dimensions.",
+      "importance": "Account loss could dominate the apparent national opportunity; acquisition economics remain unknown.",
+      "recommendation": "Protect current account relationships separately from small, cost-qualified market-expansion tests.",
+      "files": "outputs/country_performance.csv"
+    },
+    {
+      "number": 10,
+      "title": "The November peak is invoice-volume-led",
+      "evidence": "November sales of £1,503,866.78 exceed October by 30.63%.",
+      "comparison": "Invoice count rises 35.74% (2,040 to 2,769), while AOV falls 3.76% (£564.34 to £543.11).",
+      "meaning": "More invoices, not higher average invoice value, explain the growth identity.",
+      "importance": "A price-increase interpretation would misdirect peak planning; the nine-day December observation is also not comparable.",
+      "recommendation": "Validate current invoice workload, product availability and capacity before planning the next peak.",
+      "files": "outputs/monthly_performance.csv"
+    },
+    {
+      "number": 11,
+      "title": "Foreign customer AOV is higher, without a stronger repeat signal",
+      "evidence": "Mean customer AOV is £661.12 non-UK versus £391.68 UK; Welch p = 5.55×10⁻⁸, d = −0.150 for UK minus non-UK.",
+      "comparison": "Repeat shares are almost equal, 65.79% versus 65.56%, with Yates p = 0.9687.",
+      "meaning": "Higher invoice values and observed repeat share within the recorded window need not move together.",
+      "importance": "Country mix, costs, selection and tenure could explain patterns; neither comparison estimates a geography effect.",
+      "recommendation": "Compare delivered contribution and customer exposure before prioritising a country; test rather than infer causation.",
+      "files": "outputs/customer_rfm.csv; outputs/country_repeat_contingency.csv; outputs/extended_results.json"
+    },
+    {
+      "number": 12,
+      "title": "Basket associations suggest hypotheses, not demonstrated uplift",
+      "evidence": "Spearman value–quantity correlation is 0.838984 and value–line-count is 0.551606.",
+      "comparison": "Value–unweighted-mean-unit-amount correlation is only 0.094257; 825 of 3,912 merchandise codes reach 80% of merchandise gross sales.",
+      "meaning": "Basket mix and product concentration are operationally relevant, but value is mechanically constructed from quantity and price.",
+      "importance": "A heatmap cannot establish that increasing quantity or recommendations will improve profit.",
+      "recommendation": "Use credit-aware catalogue priorities and a pre-specified bundle/recommendation test with margin and credit guardrails.",
+      "files": "outputs/invoice_spearman.csv; outputs/product_pareto.csv; outputs/metrics.json"
+    }
+  ],
+  "recommendations": [
+    {
+      "number": 1,
+      "title": "Reconcile finance definitions and implement credit traceability",
+      "problem_evidence": "£10.642m before-credit sales, £9.748m credit-adjusted value and £9.726m all-line signed value are different. Two offset pairs represent 27.48% of credit value.",
+      "action": "Create a versioned metric dictionary; retain all signed records; add an original-invoice link, reason code and exception queue to each new credit. Review large matched offsets before performance reporting.",
+      "expected_benefit": "Less misclassification of sales and more interpretable credit exposure; no financial saving is established by this dataset.",
+      "measurement": "Reconciliation residual should equal £0.00 at the documented rounding basis. Measure credit-link coverage, missing reason-code share and exception age; the source lacks the first two baselines, so establish them on new data rather than inventing them.",
+      "owner": "Finance lead with BI/data engineering"
+    },
+    {
+      "number": 2,
+      "title": "Improve permissioned customer attribution without dropping anonymous activity",
+      "problem_evidence": "132,186 qualified lines lack an ID; £1,754,901.91 (16.49% of sales) cannot be assigned to a known purchaser.",
+      "action": "Audit checkout and CRM linkage, preserve valid anonymous transactions and add optional, consent-compliant identifier capture with ID quality checks. Do not infer identity from purchase resemblance.",
+      "expected_benefit": "Broader, more representative CRM measurement while preserving full commercial totals and appropriate privacy choices.",
+      "measurement": "Track both known-sales value coverage (historical 83.51%) and missing-ID line share (25.18% in qualified sales). Report weekly changes with a fresh baseline and monitor abandoned checkout/consent complaints; do not set forced identity capture as the success condition.",
+      "owner": "CRM operations and data engineering with privacy review"
+    },
+    {
+      "number": 3,
+      "title": "Protect validated high-value accounts before generic promotions",
+      "problem_evidence": "942 Champions provide 64.47% of identified sales, but gross value can be misleading: customer 16446 has only £2.90 after recorded credits.",
+      "action": "Refresh the RFM window, permissions, account status and credit-adjusted balances; review high-concentration accounts with service teams. Keep gross and adjusted versions visible, and use a holdout where contact is discretionary.",
+      "expected_benefit": "More relevant service and less incentive spend on reversed activity. Improved retention is possible but not demonstrated.",
+      "measurement": "Measure current qualified repeat activity, credit-adjusted contribution per eligible account, service issues and opt-outs over a common follow-up period. Pre-specify treatment/control and decision criteria after costs and sample size are known; do not promise an uplift.",
+      "owner": "Account management and CRM analytics"
+    },
+    {
+      "number": 4,
+      "title": "Use a bounded, eligibility-checked win-back pilot",
+      "problem_evidence": "658 At Risk/Can’t Lose Them IDs represent £736,853.23 of adjusted historical value, not recoverable sales; one has a non-positive adjusted balance.",
+      "action": "Revalidate current contact permission and trading status, resolve credits first and draw a small randomized eligible pilot with a business-as-usual holdout. Use recent recency/frequency definitions, not 2011 labels operationally.",
+      "expected_benefit": "Tests whether outreach adds incremental, retained value without presenting historical exposure as a forecast.",
+      "measurement": "Primary outcome: net-of-credit contribution per eligible assigned customer; secondary outcomes: repeat purchase, opt-outs and campaign cost. Set follow-up, minimum detectable effect and sample size from current data. Publish confidence intervals and costs before scaling.",
+      "owner": "CRM campaign manager and analyst"
+    },
+    {
+      "number": 5,
+      "title": "Prioritise credit-aware merchandise and integrate inventory economics",
+      "problem_evidence": "23843 has £168,469.60 gross but £0.00 adjusted; 22423 has £164,459.49 after recorded credits. A set of 825 of 3,912 merchandise codes reaches 80% of gross merchandise value.",
+      "action": "Build a SKU scorecard with gross/credit-adjusted value, units, credit incidence, availability, margin and supplier lead time. Separate postage/manual codes. Investigate reversed bulk entries rather than treating them as ordinary replenishment demand.",
+      "expected_benefit": "Better prioritisation of stock reviews and less gross-ranking distortion; reduced stock-outs or cash tied in inventory cannot be quantified from these data.",
+      "measurement": "With inventory/cost data, monitor fill rate, stock-out days, contribution after credits and inventory turns by priority SKU. Compare against an agreed baseline and keep availability changes separate from demand changes.",
+      "owner": "Merchandising and supply planning"
+    },
+    {
+      "number": 6,
+      "title": "Plan peak workload from invoice volume, then validate operational effort",
+      "problem_evidence": "November invoice count increases 35.74% while AOV declines 3.76%; the modal recorded start hour is noon with 3,219 invoices across the extract.",
+      "action": "Refresh multiple years of demand and join warehouse/service timestamps. Stress-test invoice-processing and fulfilment capacity for observed order-count variation; separate billing times from physical workload.",
+      "expected_benefit": "A workload-led capacity plan is better aligned with the observed growth pattern than a price-led story, but no staffing saving or service improvement has been measured.",
+      "measurement": "Use current invoices/hour, processing minutes/order, backlog, on-time dispatch and error rate. Set service-level and capacity gates using current workload; explicitly compare complete months and avoid extrapolating the partial December record.",
+      "owner": "Operations manager with analytics and systems teams"
+    },
+    {
+      "number": 7,
+      "title": "Separate key-account protection from geographic expansion",
+      "problem_evidence": "Netherlands leads non-UK value (£285,446.34) but one account supplies 98.16% of identified country sales; Germany/France show broader historical customer counts (94/87).",
+      "action": "Review current Netherlands and Australia key accounts separately from market-acquisition opportunities. For any expansion pilot, obtain shipping, tax, returns and landed-margin data and cap pilot exposure under approved budgets.",
+      "expected_benefit": "Makes concentration risk explicit and avoids mistaking one buyer’s demand for a broad national market.",
+      "measurement": "Track top-account share, active buyer breadth, delivered contribution, repeat activity, credit value and acquisition cost. Expansion passes a pre-agreed contribution/retention gate on current data, not simply a country gross-sales rank.",
+      "owner": "Commercial lead, account manager and finance"
+    },
+    {
+      "number": 8,
+      "title": "Test basket-building rather than monetising correlation",
+      "problem_evidence": "Value–line-count Spearman 0.551606 and value–quantity 0.838984 suggest basket hypotheses, while repeat/one-time mean AOV differs little under Welch (p 0.8732).",
+      "action": "Develop plausible complementary-product suggestions using merchandise transactions, then randomize eligible customers or sessions if appropriate data become available. Pre-register the outcome, assignment unit, exclusions and credit follow-up.",
+      "expected_benefit": "Can distinguish incremental contribution from selection and larger-basket mechanics; no observed cross-sell lift or price elasticity is claimed.",
+      "measurement": "Measure contribution per assigned unit, conversion only if session denominators exist, credit-adjusted AOV, credit incidence and opt-outs. Compute a current-data power plan and report effect intervals. Stop or revise if margin/credit guardrails deteriorate.",
+      "owner": "Product/merchandising team with experimentation analyst"
+    }
+  ],
+  "code_appendix_files": [
+    "scripts/verified_core.py",
+    "scripts/analyze.py",
+    "scripts/make_charts.py"
+  ],
+  "raw_sha256": "43465a06f2ccf7c8b5bd2892bc7defb52f97487934fe93b16ae4c3936424676d",
+  "synthetic_records": 0
+}

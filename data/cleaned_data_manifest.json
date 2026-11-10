@@ -1,0 +1,16 @@
+[
+  {
+    "file": "cleaned_all_records.csv.gz",
+    "bytes": 11359536,
+    "sha256": "c1fdc256095cca2fee876a59b2f8fc28aa45505f321a5ce0c10e1901a1490654",
+    "rows": 536641,
+    "columns": 16
+  },
+  {
+    "file": "qualified_sales.csv.gz",
+    "bytes": 11036089,
+    "sha256": "5db514f9ddbe9af7816e48b027b582b9751379ac365b5ab43027dc81bf1a8e18",
+    "rows": 524878,
+    "columns": 16
+  }
+]

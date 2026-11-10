@@ -1,0 +1,19 @@
+gross_sales: 10642110.8
+credit_value_abs: 893979.73
+credit_adjusted_value: 9748131.07
+other_excluded_value: -22124.12
+dedup_signed_all_lines: 9726006.95
+known_customer_sales: 8887208.89
+anonymous_sales_share_pct: 16.49
+champions_total_sales_share_pct: 53.84
+largest_nonuk_country: Netherlands
+paired_extreme_gross: 245653.2
+PASS: 24 Task 4 metric reconciliations; all aggregation and partition checks.
+Extended exploration complete: [536641, 16] cleaned-all; [524878, 16] qualified sales
+Description whitespace normalized: 112371 | Country whitespace: 0
+Raw mean / min Quantity: 9.55224954743324 -80995
+Worked standard deviation: 0.8944271909999159
+Worked Pearson r: 0.9952659485651739 | Worked Welch t: -5.474116123522671 df: 1008.1829680542309 p: 5.549594300098356e-08
+Quantity IQR outliers: 27111 | first invoice: 139.12
+Raw: (541909, 8) | cleaned-all: (536641, 16) | sales: (524878, 16)
+Source SHA-256: 43465a06f2ccf7c8b5bd2892bc7defb52f97487934fe93b16ae4c3936424676d

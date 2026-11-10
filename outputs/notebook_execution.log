@@ -1,0 +1,21 @@
+Executing notebook: 27 cells
+Executed cell 2
+Executed cell 4
+Executed cell 5
+Executed cell 7
+Executed cell 9
+Executed cell 11
+Executed cell 13
+Executed cell 15
+Executed cell 17
+Executed cell 19
+Executed cell 21
+Executed cell 23
+Executed cell 25
+{
+  "notebook": "Task4_Online_Retail_Evidence_Based_Analysis.ipynb",
+  "cells": 27,
+  "executed_code_cells": 13,
+  "errors": 0,
+  "bytes": 2051802
+}

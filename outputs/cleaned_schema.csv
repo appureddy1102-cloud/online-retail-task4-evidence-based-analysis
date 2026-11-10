@@ -1,0 +1,17 @@
+Column,Dtype
+SourceRow,int64
+InvoiceNo,string
+StockCode,string
+Description,string
+Quantity,int64
+InvoiceDate,datetime64[ns]
+UnitPrice,float64
+CustomerID,Int64
+Country,string
+IsCredit,boolean
+IsNonProduct,bool
+IsOtherNegativeMovement,boolean
+HasCustomerID,bool
+IsQualifiedSale,boolean
+LineValue,float64
+Month,object
