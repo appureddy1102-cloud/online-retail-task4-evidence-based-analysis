@@ -6,6 +6,6 @@ Word master: https://drive.google.com/file/d/12UGKoGWLT0XeweG9mqwoVWq4BAY87jQh/v
 
 GitHub project: https://github.com/appureddy1102-cloud/online-retail-task4-evidence-based-analysis
 
-The repository has been created and the full project publication is underway. See `SUBMISSION_LINKS.md` for verification details and `SUBMISSION_DESCRIPTION.md` for the ready-to-paste project description.
+The repository and the full project have been published and anonymously verified. See `SUBMISSION_LINKS.md` for verification details and `SUBMISSION_DESCRIPTION.md` for the ready-to-paste project description.
 
 No grade is guaranteed. Task 5 and the original Task 4 repositories are unchanged.

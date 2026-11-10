@@ -5,7 +5,7 @@
 - **GitHub project:** https://github.com/appureddy1102-cloud/online-retail-task4-evidence-based-analysis
 - **Submission description:** `SUBMISSION_DESCRIPTION.md` (at least 200 words).
 
-The GitHub repository has been created; the project content is being published. The Google Doc and original Word are anyone-with-link reader files and were independently verified.
+The GitHub repository and its complete project content are public and were verified without signing in. The Google Doc and original Word are anyone-with-link reader files and were independently verified.
 
 Word SHA-256: `30c0823a72edb604492ac4d19278f0b8d0a0a502cf43cfc35bb178c828f645d8`; 1,388,194 bytes; 73 LibreOffice-rendered pages; 15 figures and 31 tables. Technical checks: 77/77; layout checks: 10/10. Executed notebook: 13 code cells, zero errors. Microsoft Word application rendering was not tested.
 

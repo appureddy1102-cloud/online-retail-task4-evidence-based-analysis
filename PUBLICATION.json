@@ -28,8 +28,13 @@
   "github": {
     "url": "https://github.com/appureddy1102-cloud/online-retail-task4-evidence-based-analysis",
     "repository_created": true,
-    "status": "created_project_push_pending",
-    "pushed": false
+    "status": "published_and_anonymously_verified",
+    "pushed": true,
+    "default_branch": "main",
+    "initial_content_commit": "7a4218f",
+    "public_tree_files_verified": 103,
+    "all_fifteen_figures_verified": true,
+    "report_download_identical": true
   },
   "task5_preserved_unchanged": true,
   "official_evaluator_score": null

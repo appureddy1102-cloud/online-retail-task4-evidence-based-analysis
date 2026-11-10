@@ -27,7 +27,7 @@
 | Numerical/ worked examples | Fourteen fully worked examples use actual workbook records and substituted values, including small-sample SD/Pearson and full-customer Welch | First-five subsets illustrate arithmetic only and are explicitly not random business samples |
 | Original insights | Twelve evidence-backed insights include extreme offsets, volume/AOV decomposition, value-coverage denominators and account-dependent countries | No causal or current-business claim is possible from this historical extract |
 | Practical recommendations | Eight actions state problem/evidence, proposed owner, action, expected mechanism and measurable decision gate | Benefits, ROI, current baselines and uplift are not observed; several pilots need fresh cost, identity or operational data |
-| Reproducibility | Complete computational code appears in report and project; executed notebook saves outputs; original/cleaned data manifests, exact versions, source licence and executable validator | Optional Word pagination needs Writer/UNO or manual Word field refresh; public GitHub publication requires working authorization |
+| Reproducibility | Complete computational code appears in report and project; executed notebook saves outputs; original/cleaned data manifests, exact versions, source licence and executable validator | Optional Word pagination needs Writer/UNO or manual Word field refresh; public GitHub repository and project files have now been published and anonymously verified |
 
 **Readiness conclusion:** the report is designed to meet the substantive evidence requirements of a 90+/100 submission. No official score exists and no grade is guaranteed. Technical checks establish reproducibility and consistency, not an external evaluator's judgement.
 
